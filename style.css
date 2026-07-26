@@ -1,0 +1,186 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:"Noto Sans KR", sans-serif;
+}
+
+
+body{
+    background:linear-gradient(#5ecbff,#0066aa);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.game{
+
+    width:380px;
+    max-width:95%;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+
+}
+
+
+
+h1{
+
+    color:#0077cc;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.status{
+
+    background:#eef8ff;
+
+    border-radius:15px;
+
+    padding:10px;
+
+    margin-bottom:15px;
+
+    display:flex;
+
+    justify-content:space-around;
+
+    font-weight:bold;
+
+}
+
+
+
+.sea{
+
+    height:220px;
+
+    background:
+
+    linear-gradient(
+    #58c9ff 0%,
+    #0077cc 70%,
+    #004477 100%
+    );
+
+    border-radius:20px;
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin-bottom:15px;
+
+}
+
+
+
+#fish{
+
+    position:absolute;
+
+    top:60px;
+
+    left:150px;
+
+    font-size:50px;
+
+    transition:0.3s;
+
+}
+
+
+
+#rod{
+
+    position:absolute;
+
+    bottom:20px;
+
+    left:160px;
+
+    font-size:45px;
+
+}
+
+
+
+#message{
+
+    margin:15px 0;
+
+    color:#333;
+
+}
+
+
+
+button{
+
+    width:90%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#008cff;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+}
+
+
+
+button:active{
+
+    transform:scale(0.95);
+
+}
+
+
+
+.result,
+.book{
+
+    margin-top:15px;
+
+    background:#f5f5f5;
+
+    padding:15px;
+
+    border-radius:15px;
+
+}
+
+
+
+@media(max-width:500px){
+
+    .game{
+
+        width:95%;
+
+    }
+
+}
